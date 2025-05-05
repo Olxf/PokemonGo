@@ -1,0 +1,142 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Jaro", sans-serif;
+  height: 100vh;
+  color: white;
+  background-color: #333333;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.main-section .upper-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+.main-section .upper-box img {
+  width: 80px;
+}
+.main-section .upper-box h1 {
+  font-size: 2.5rem;
+  padding: 10px;
+}
+.main-section .pokemon-chooser {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.main-section .pokemon-chooser h2 {
+  font-size: 4rem;
+  padding: 10px;
+}
+.main-section .pokemon-chooser .pokemon-box {
+  position: relative;
+  background-color: #201f1f;
+  height: 340px;
+  width: 70%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.main-section .pokemon-chooser .pokemon-box .pokemon-name {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+.main-section .pokemon-chooser .pokemon-box .pokemon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text-section .text-img {
+  width: 330px;
+  padding: 3rem;
+}
+.text-section .text-box {
+  padding: 0rem 3rem;
+}
+.text-section .text-box .text-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.text-section .text-box .text {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 576px) {
+  .main-section .upper-box h1 {
+    font-size: 3rem;
+  }
+  .main-section .upper-box img {
+    width: 120px;
+  }
+  .text-section .text-box .text-title {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .text-section .text-box .text {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 992px) {
+  .main-section .upper-box h1 {
+    font-size: 4rem;
+  }
+  .main-section .upper-box img {
+    width: 150px;
+  }
+  .main-section .pokemon-chooser {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+  }
+  .main-section .pokemon-chooser .pokemon-box {
+    width: 300px;
+  }
+  .text-section {
+    flex-direction: row;
+    margin-top: 5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
